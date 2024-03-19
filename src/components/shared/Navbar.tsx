@@ -26,9 +26,9 @@ export const Navbar = () => {
             <li className="text-black hover:text-green-800">
               <a href="/">Home</a>
             </li>
-            <li className="text-gray-400 hover:text-green-800">Products</li>
-            <li className="text-gray-400 hover:text-green-800">Pricing</li>
-            <li className="text-gray-400 hover:text-green-800">About</li>
+            <li className="text-gray-400 hover:text-green-800">Shop</li>
+            <li className="text-gray-400 hover:text-green-800">Login</li>
+            <li className="text-gray-400 hover:text-green-800">About us</li>
           </ul>
         )}
       </div>
@@ -38,9 +38,9 @@ export const Navbar = () => {
           <li className="text-black hover:text-green-800 p-4">
             <a href="/">Home</a>
           </li>
-          <li className="text-gray-400 hover:text-green-800 p-4">Products</li>
-          <li className="text-gray-400 hover:text-green-800 p-4">Pricing</li>
-          <li className="text-gray-400 hover:text-green-800 p-4">About</li>
+          <li className="text-gray-400 hover:text-green-800 p-4">Shop</li>
+          <li className="text-gray-400 hover:text-green-800 p-4">Login</li>
+          <li className="text-gray-400 hover:text-green-800 p-4">About us</li>
         </ul>
       ) : null}
 

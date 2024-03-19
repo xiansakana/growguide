@@ -11,25 +11,22 @@ export const Home = () => {
       <div className="pt-16 flex flex-col">
         <div className="relative">
           <img
-            src="/assets/1.svg"
+            src="/assets/1.png"
             alt="Background"
             className="w-full object-cover"
           />
           <div className="md:absolute top-0 left-1/2 right-0 bottom-0 flex flex-row justify-center items-center p-8 md:p-16 lg:p-24">
             <div>
               <h1 className="font-bold text-left text-black text-3xl md:text-2xl lg:text-4xl">
-                <span className="text-green-800">Green grass</span> on your side
-                of the fence.
+                <span className="text-green-800">Learn </span> Farming Practices
                 <br />
                 <span className="text-green-800">Always.</span>
               </h1>
               <p className="text-black font-bold text-lg md:text-sm lg:text-base mt-4 text-left">
-                Lorem ipsum dolor sit amet.
+                With GrowGuide
               </p>
               <p className="text-black text-sm md:text-xs lg:text-sm mt-4 text-left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Necessitatibus hic quas, sit reprehenderit quam molestiae quod
-                maiores officiis tenetur nihil?
+                Visit the Shop and More...
               </p>
               <button className="mt-6 px-8 py-3  bg-orange-500 text-white rounded-lg shadow-xl hover:bg-green-600 transition-colors ">
                 <p className="text-xs md:text-sm lg:text-base">
@@ -97,82 +94,81 @@ export const Home = () => {
           </span>
         </div>
 
-        <div className="flex flex-col items-center justify-center px-8 gap-y-8 py-8 lg:flex-row">
-          <div className="flex flex-col justify-center gap-y-8 px-8">
-            <div className="flex flex-row justify-center gap-x-4">
+        <div className="flex flex-col items-center justify-center px-4 gap-y-8 py-8 lg:flex-row">
+          <div className="flex flex-col justify-center gap-y-8 px-8 lg:w-1/2">
+            <div className="flex flex-row justify-start gap-x-4">
               <img src="/assets/save.svg" alt="" className="w-16" />
               <div>
-                <span className="text-base font-bold">Save</span>
+                <span className="text-base font-bold">Learning</span>
                 <br />
                 <span className="text-xs">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Beatae dolores et omnis tempore labore repellat quasi aut esse
-                  nesciunt rerum.
+                  With GrowGuide you can learn more about crops, livestock,
+                  storage of agricultural products, essential farming techniques
+                  to help your farming needs.
                 </span>
               </div>
             </div>
-            <div className="flex flex-row justify-center gap-x-4">
+            <div className="flex flex-row justify-start gap-x-4">
               <img src="/assets/reliable.svg" alt="" className="w-16" />
               <div>
-                <span className="text-base font-bold">Reliable</span>
+                <span className="text-base font-bold">MarketPlace</span>
                 <br />
                 <span className="text-xs">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Beatae dolores et omnis tempore labore repellat quasi aut esse
-                  nesciunt rerum.
+                  You can purchase - seeds and grown crops for sale - little and
+                  grown livestock for sale and breeding. - equipments for sale
+                  and rent - lands for sale and rent etc.
                 </span>
               </div>
             </div>
-            <div className="flex flex-row justify-center gap-x-4">
+            <div className="flex flex-row justify-start gap-x-4">
               <img src="/assets/easy.svg" alt="" className="w-16" />
               <div>
-                <span className="text-base font-bold">Easy</span>
+                <span className="text-base font-bold">Online Support</span>
                 <br />
                 <span className="text-xs">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Beatae dolores et omnis tempore labore repellat quasi aut esse
-                  nesciunt rerum.
+                  Our online support team are available to answer your
+                  questions, guide you, assist you in solving various issues.
                 </span>
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-1/2">
+          <div className="flex flex-col w-1/3">
             <img src="/assets/2.svg" alt="" />
           </div>
-          <div className="flex flex-col justify-center gap-y-8 px-8">
-            <div className="flex flex-row justify-center gap-x-4">
+          <div className="flex flex-col justify-center gap-y-8 px-8 lg:w-1/2">
+            <div className="flex flex-row justify-start gap-x-4">
               <img src="/assets/save.svg" alt="" className="w-16" />
               <div>
-                <span className="text-base font-bold">Save</span>
+                <span className="text-base font-bold">Top Quality</span>
                 <br />
                 <span className="text-xs">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Beatae dolores et omnis tempore labore repellat quasi aut esse
-                  nesciunt rerum.
+                  We have a range of top quality products and services for your
+                  farming needs.
                 </span>
               </div>
             </div>
-            <div className="flex flex-row justify-center gap-x-4">
+            <div className="flex flex-row justify-start gap-x-4">
               <img src="/assets/reliable.svg" alt="" className="w-16" />
               <div>
-                <span className="text-base font-bold">Reliable</span>
+                <span className="text-base font-bold">Security</span>
                 <br />
                 <span className="text-xs">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Beatae dolores et omnis tempore labore repellat quasi aut esse
-                  nesciunt rerum.
+                  Our platform is very secure with state of the art protocols to
+                  ensure imformation and personal data are well protected
                 </span>
               </div>
             </div>
-            <div className="flex flex-row justify-center gap-x-4">
+            <div className="flex flex-row justify-start gap-x-4">
               <img src="/assets/easy.svg" alt="" className="w-16" />
               <div>
-                <span className="text-base font-bold">Easy</span>
+                <span className="text-base font-bold">
+                  Prizes, Giveaways, Bonus
+                </span>
                 <br />
                 <span className="text-xs">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Beatae dolores et omnis tempore labore repellat quasi aut esse
-                  nesciunt rerum.
+                  We have amazing prices, giveways and bonus that will be given
+                  to our esteemed customers regularly. Simply follow the
+                  instructions to qualify for wonderful prizes.
                 </span>
               </div>
             </div>
@@ -188,9 +184,11 @@ export const Home = () => {
               Product Collection
             </span>
             <span className="text-green-900  text-sm text-center md:px-24">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              laudantium facere esse vero autem voluptatum aspernatur minima
-              velit eveniet expedita!
+              Explore the full range of our products, meticulously designed to
+              meet all your needs with convenience and efficiency. Our selection
+              caters to both personal and professional use, ensuring that
+              whether you're nurturing a small garden or managing vast
+              agricultural land, we have the right tool for you.
             </span>
           </div>
           <ProductCarousel />
@@ -229,7 +227,7 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center gap-y-4 px-12 my-12 ">
+        {/* <div className="flex flex-col justify-center items-center gap-y-4 px-12 my-12 ">
           <span className="text-green-800 font-bold md:text-base text-sm">
             BEST SELLERS
           </span>
@@ -248,9 +246,9 @@ export const Home = () => {
               Visit All Products
             </p>
           </button>
-        </div>
+        </div> */}
 
-        <div className="flex flex-col justify-center items-center gap-y-4 px-12  ">
+        <div className="flex flex-col justify-center items-center gap-y-4 p-12  ">
           <span className="text-green-800 font-bold md:text-base text-sm">
             STEPS TO START
           </span>
@@ -269,10 +267,10 @@ export const Home = () => {
           </button>
         </div>
 
-        <div className="rounded overflow-hidden lg:px-64 py-12 md:px-32 px-16">
+        <div className="rounded overflow-hidden lg:px-48 lg:mx-36 py-12 md:px-48 px-16">
           <div className="relative shadow-lg ">
             <img className="w-full" src="/assets/img1.png" alt="Gardening" />
-            <div className="hidden sm:block absolute bottom-0 left-0 right-0 bg-green-600 bg-opacity-50 border-t-4 border-green-900 p-4">
+            {/* <div className="hidden sm:block absolute bottom-0 left-0 right-0 bg-green-600 bg-opacity-50 border-t-4 border-green-900 p-4">
               <div className="font-bold text-white text-sm md:text-xl mb-2">
                 Vivamus Integer Id Velit
               </div>
@@ -281,7 +279,7 @@ export const Home = () => {
                 scelerisque et, massa pulvinar volutpat pulvinar tortor. Orci,
                 dolor non magna rutrum diam platea nascetur.
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -289,7 +287,7 @@ export const Home = () => {
           <div className="flex flex-col bg-green-600 rounded-lg w-64 h-40 items-center justify-center p-2 gap-y-2">
             <img src="assets/clock.svg" alt="" className="w-12 " />
             <span className="text-xs">Weekdays: 8AM - 5PM (EST)</span>
-            <span className="text-xs">Wddkend: 9AM - 5PM (EST)</span>
+            <span className="text-xs">Weekend: 9AM - 5PM (EST)</span>
           </div>
           <div className="flex flex-col bg-green-600 rounded-lg w-64 h-40 items-center justify-center p-2 gap-y-2">
             <img src="assets/telephone.svg" alt="" className="w-12 " />
@@ -310,8 +308,14 @@ export const Home = () => {
           <span className="md:text-4xl font-bold text-center text-3xl">
             Petraltools Sprayers
           </span>
-          <span className="text-black text-sm text-center">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, quia!
+          <span className="text-black text-sm px-8 md:px-16 lg:px-32 text-center">
+            Elevate your farming and gardening with the latest in our lineup of
+            Petraltools Sprayers. Engineered for reliability, our sprayers
+            deliver an unmatched balance of coverage and control. From delicate
+            mists to powerful jets, cater to all your plants' needs with a
+            simple twist of the nozzle. With ergonomic design and durable
+            materials, Petraltools Sprayers are the trusted companion for your
+            green ambitions.
           </span>
           <button className="mt-6 px-8 py-3 bg-orange-500 text-white rounded-lg shadow-xl hover:bg-green-600 transition-colors ">
             <p className="text-xs md:text-sm lg:text-base">Shop Sprayers Now</p>
@@ -339,7 +343,7 @@ export const Home = () => {
             <div className="flex flex-col rounded-2xl w-full items-center justify-center p-4 gap-y-2 shadow-inner border-2 text-center">
               <img src="assets/customer1.svg" alt="" className="" />
               <span className="text-base font-bold">Sam</span>
-              <span className="text-xs">Verified 12/12/2021</span>
+              <span className="text-xs">Verified 05/06/2023</span>
               <div className="flex flex-row">
                 <img src="assets/star_filled.svg" alt="" />
                 <img src="assets/star_filled.svg" alt="" />
@@ -347,16 +351,18 @@ export const Home = () => {
                 <img src="assets/star_filled.svg" alt="" />
                 <img src="assets/star_filled.svg" alt="" />
               </div>
-              <span className="text-xs font-bold">Useful Products</span>
+              <span className="text-xs font-bold">Essential Market Access</span>
               <span className="text-xs px-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque, voluptatem.
+                "As a small-scale organic farmer, GrowGuide's market has been
+                invaluable. I've accessed a wide range of quality seeds and
+                equipment that were previously out of reach. The platform's easy
+                navigation and transaction process saved me time and effort."
               </span>
             </div>
             <div className="flex flex-col rounded-2xl w-full items-center justify-center p-4 gap-y-2 shadow-inner border-2 text-center">
               <img src="assets/customer2.svg" alt="" className="" />
               <span className="text-base font-bold">Jane Smith</span>
-              <span className="text-xs">Verified 12/12/2021</span>
+              <span className="text-xs">Verified 03/08/2023</span>
               <div className="flex flex-row">
                 <img src="assets/star_filled.svg" alt="" />
                 <img src="assets/star_filled.svg" alt="" />
@@ -364,16 +370,20 @@ export const Home = () => {
                 <img src="assets/star_filled.svg" alt="" />
                 <img src="assets/star_filled.svg" alt="" />
               </div>
-              <span className="text-xs font-bold">Useful Products</span>
+              <span className="text-xs font-bold">
+                Unmatched Learning Resources
+              </span>
               <span className="text-xs px-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque, voluptatem.
+                "GrowGuide's learning materials have been a game-changer for my
+                farm. The multilingual tutorials allowed me to learn new farming
+                techniques and apply them directly to my work. The difference in
+                my yields has been remarkable."
               </span>
             </div>
             <div className="flex flex-col rounded-2xl w-full items-center justify-center p-4 gap-y-2 shadow-inner border-2 text-center">
               <img src="assets/customer3.svg" alt="" className="" />
               <span className="text-base font-bold">John Doe</span>
-              <span className="text-xs">Verified 12/12/2021</span>
+              <span className="text-xs">Verified 18/09/2023</span>
               <div className="flex flex-row">
                 <img src="assets/star_filled.svg" alt="" />
                 <img src="assets/star_filled.svg" alt="" />
@@ -381,10 +391,13 @@ export const Home = () => {
                 <img src="assets/star_filled.svg" alt="" />
                 <img src="assets/star_filled.svg" alt="" />
               </div>
-              <span className="text-xs font-bold">Useful Products</span>
+              <span className="text-xs font-bold">
+                Community and Commerce Combined
+              </span>
               <span className="text-xs px-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque, voluptatem.
+                "I've not only sold my products but also connected with other
+                farmers, sharing insights and tips. GrowGuide is more than a
+                marketplace; it's a community hub for knowledge and growth."
               </span>
             </div>
           </div>
@@ -400,7 +413,7 @@ export const Home = () => {
           </div>
           <div className="flex flex-col justify-center items-center">
             <img src="assets/mark2.svg" alt="" />
-            <span className="test-sm">FREE Shipping For Abover $35 Orders</span>
+            <span className="test-sm">FREE Shipping For Above $35 Orders</span>
           </div>
           <div className="flex flex-col justify-center items-center">
             <img src="assets/mark2.svg" alt="" />

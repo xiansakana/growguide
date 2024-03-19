@@ -8,9 +8,9 @@ export const Footer = () => {
           <a href="/">
             <img src="assets/logo.png" alt="" className="m-0 w-20" />
           </a>
-          <p className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quia
-            reiciendis suscipit voluptatum quaerat pariatur.
+          <p className="mt-6 text-sm leading-7 font-montserrat text-white-400 sm:max-w-sm">
+            GrowGuide is a learning platform with a large online market where
+            agricutural products and services can be purchased easily.
           </p>
         </div>
 
@@ -41,13 +41,13 @@ export const Footer = () => {
               <img src="assets/clock.svg" width={24} height={24} alt="" />
               <div className="flex flex-col gap-y-2 mt-3">
                 <span>Weekday 8AM - 5PM</span>
-                <span>Weekday 8AM - 5PM</span>
+                <span>Weekend 9AM - 5PM</span>
               </div>
             </div>
             <div className="flex flex-1 gap-x-4 mt-3">
               <img src="assets/envelope.svg" width={24} height={24} alt="" />
 
-              <span>support@petratools.com</span>
+              <span>support@growguide.com</span>
             </div>
             <div className="flex flex-1 gap-x-4 mt-3">
               <img src="assets/telephone.svg" width={24} height={24} alt="" />
@@ -73,7 +73,7 @@ export const Footer = () => {
               />
               <button
                 type="submit"
-                className="w-32 bg-white text-black font-bold py-2 px-6 rounded-lg "
+                className="w-32 bg-white text-black font-bold py-2 px-6 rounded-lg hover:bg-green-600"
               >
                 Submit
               </button>
@@ -83,7 +83,7 @@ export const Footer = () => {
       </div>
 
       <div className="flex text-white pb-12 px-12">
-        <p>Copyright © 2024 All rights reserved.</p>
+        <p>Copyright © GrowGuide 2024 All rights reserved.</p>
       </div>
     </div>
   );
