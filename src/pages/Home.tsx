@@ -15,7 +15,10 @@ export const Home = () => {
             alt="Background"
             className="w-full object-cover"
           />
-          <div className="md:absolute top-0 left-1/2 right-0 bottom-0 flex flex-row justify-center items-center p-8 md:p-16 lg:p-24">
+          <div
+            id="#home"
+            className="md:absolute top-0 left-1/2 right-0 bottom-0 flex flex-row justify-center items-center p-8 md:p-16 lg:p-24"
+          >
             <div>
               <h1 className="font-bold text-left text-black text-3xl md:text-2xl lg:text-4xl">
                 <span className="text-green-800">Learn </span> Farming Practices
@@ -80,7 +83,7 @@ export const Home = () => {
           </div>
         </div>
         <div
-          id="about-us-section"
+          id="about-us"
           className="flex flex-col justify-center items-center gap-y-4 px-12 py-8"
         >
           <span className="text-green-800 font-bold md:text-base text-sm">
@@ -248,7 +251,7 @@ export const Home = () => {
           </button>
         </div> */}
         <div
-          id="shop-section"
+          id="shop"
           className="flex flex-col justify-center items-center gap-y-4 p-12  "
         >
           <span className="text-green-800 font-bold md:text-base text-sm">
@@ -331,7 +334,7 @@ export const Home = () => {
           </div>
         </div>
         <div
-          id="pricing-section"
+          id="pricing"
           className="flex flex-col justify-center items-center gap-y-4 px-12 my-12 "
         >
           <span className="text-green-800 font-bold md:text-base text-sm">
@@ -381,7 +384,7 @@ export const Home = () => {
               <div className="border-b p-2">
                 <span className="text-sm text-green-500 ">Sell </span>
                 <span className="text-sm ">
-                  Products and Services as a Vendar
+                  Products and Services as a Vendor
                 </span>
               </div>
               <div className="border-b p-2">
@@ -400,7 +403,7 @@ export const Home = () => {
         </div>
 
         <div
-          id="testimonials-section"
+          id="testimonials"
           className="flex flex-col justify-center items-center gap-y-4 px-12 my-12 "
         >
           <span className="text-green-800 font-bold md:text-base text-sm">
@@ -477,7 +480,7 @@ export const Home = () => {
         </div>
 
         <div
-          id="download-section"
+          id="download"
           className="flex flex-col justify-center items-center gap-y-4 px-12 my-12 "
         >
           <span className="md:text-4xl font-bold text-center text-3xl">

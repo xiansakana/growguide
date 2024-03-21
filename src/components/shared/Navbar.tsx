@@ -1,5 +1,4 @@
-// import { MenuIcon } from "lucide-react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
 
 export const Navbar = () => {
@@ -8,6 +7,38 @@ export const Navbar = () => {
   const handleClickMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const [activeSection, setActiveSection] = useState("");
+
+  const handleScroll = () => {
+    const sections = [
+      "home",
+      "about-us",
+      "shop",
+      "pricing",
+      "testimonials",
+      "download",
+    ];
+    const currentSection = sections.find((section) => {
+      const element = document.getElementById(section);
+      if (element) {
+        const scrollPosition = window.scrollY + window.innerHeight;
+        return (
+          scrollPosition >= element.offsetTop &&
+          scrollPosition <= element.offsetTop + element.offsetHeight
+        );
+      }
+      return false;
+    });
+    if (currentSection) {
+      setActiveSection(currentSection);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <nav className="flex gap-2 fixed z-10 justify-between shadow-md items-center px-8 w-full bg-white">
@@ -23,62 +54,98 @@ export const Navbar = () => {
           </div>
         ) : (
           <ul className="w-full flex gap-x-4">
-            <li>
-              <li className="text-gray-400 hover:text-green-800">
-                <a href="/">Home</a>
-              </li>
+            <li
+              className={`text-gray-400 hover:text-green-800 ${
+                activeSection === "home" ? "text-green-800" : ""
+              }`}
+            >
+              <a href="/">Home</a>
             </li>
-            <li className="text-gray-400 hover:text-green-800">
-              <a href="#about-us-section">About us</a>
+            <li
+              className={`text-gray-400 hover:text-green-800 ${
+                activeSection === "about-us" ? "text-green-800" : ""
+              }`}
+            >
+              <a href="#about-us">About us</a>
             </li>
-            <li className="text-gray-400 hover:text-green-800">
-              <a href="#shop-section">Shop</a>
+            <li
+              className={`text-gray-400 hover:text-green-800 ${
+                activeSection === "pricing" ? "text-green-800" : ""
+              }`}
+            >
+              <a href="#pricing">Pricing</a>
             </li>
-            <li className="text-gray-400 hover:text-green-800">
-              <a href="#pricing-section">Pricing</a>
+            <li
+              className={`text-gray-400 hover:text-green-800 ${
+                activeSection === "testimonials" ? "text-green-800" : ""
+              }`}
+            >
+              <a href="#testimonials">Testimonials</a>
             </li>
-            <li className="text-gray-400 hover:text-green-800">
-              <a href="#testimonials-section">Testimonials</a>
+            <li
+              className={`text-gray-400 hover:text-green-800 ${
+                activeSection === "download" ? "text-green-800" : ""
+              }`}
+            >
+              <a href="#download">Download</a>
             </li>
-            <li className="text-gray-400 hover:text-green-800">
-              <a href="#download-section">Download</a>
+            <li
+              className={`text-gray-400 hover:text-green-800 ${
+                activeSection === "login" ? "text-green-800" : ""
+              }`}
+            >
+              <a href="/">Login</a>
             </li>
-            <li className="text-gray-400 hover:text-green-800">Login</li>
           </ul>
         )}
         {isMenuOpen && isMobile ? (
-          <ul className="w-full flex gap-x-4">
-            <li className="text-black hover:text-green-800">
+          <ul className="absolute top-full left-0 pl-4 w-full bg-white shadow-md">
+            <li
+              className={`text-gray-400 hover:text-green-800 p-4 ${
+                activeSection === "home" ? "text-green-800" : ""
+              }`}
+            >
               <a href="/">Home</a>
             </li>
-            <li className="text-gray-400 hover:text-green-800">
-              <a href="#about-us-section">About us</a>
+            <li
+              className={`text-gray-400 hover:text-green-800 p-4 ${
+                activeSection === "about-us" ? "text-green-800" : ""
+              }`}
+            >
+              <a href="#about-us">About us</a>
             </li>
-            <li className="text-gray-400 hover:text-green-800">
-              <a href="#shop-section">Shop</a>
+            <li
+              className={`text-gray-400 hover:text-green-800 p-4 ${
+                activeSection === "pricing" ? "text-green-800" : ""
+              }`}
+            >
+              <a href="#pricing">Pricing</a>
             </li>
-            <li className="text-gray-400 hover:text-green-800">
-              <a href="#pricing-section">Pricing</a>
+            <li
+              className={`text-gray-400 hover:text-green-800 p-4 ${
+                activeSection === "testimonials" ? "text-green-800" : ""
+              }`}
+            >
+              <a href="#testimonials">Testimonials</a>
             </li>
-            <li className="text-gray-400 hover:text-green-800">
-              <a href="#testimonials-section">Testimonials</a>
+            <li
+              className={`text-gray-400 hover:text-green-800 p-4 ${
+                activeSection === "download" ? "text-green-800" : ""
+              }`}
+            >
+              <a href="#download">Download</a>
             </li>
-            <li className="text-gray-400 hover:text-green-800">
-              <a href="#download-section">Download</a>
+            <li
+              className={`text-gray-400 hover:text-green-800 p-4 ${
+                activeSection === "login" ? "text-green-800" : ""
+              }`}
+            >
+              <a href="/">Login</a>
             </li>
-            <li className="text-gray-400 hover:text-green-800">Login</li>
           </ul>
         ) : null}
       </div>
 
-      <div className="flex md:mr-96">
-        <img
-          loading="lazy"
-          src="assets/logo.png"
-          alt=""
-          className="my-auto w-16"
-        />
-      </div>
       <div className="flex gap-1 justify-end items-center">
         <img
           loading="lazy"
@@ -97,6 +164,12 @@ export const Navbar = () => {
           src="assets/Cart 1.svg"
           alt=""
           className="self-stretch my-auto size-6"
+        />
+        <img
+          loading="lazy"
+          src="assets/logo.png"
+          alt=""
+          className="my-auto w-16"
         />
       </div>
     </nav>
