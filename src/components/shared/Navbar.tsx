@@ -11,7 +11,7 @@ export const Navbar = () => {
 
   return (
     <nav className="flex gap-2 fixed z-10 justify-between shadow-md items-center px-8 w-full bg-white">
-      <div>
+      <div className="flex">
         {isMobile ? (
           <div onClick={handleClickMenu}>
             <img
@@ -22,29 +22,56 @@ export const Navbar = () => {
             />
           </div>
         ) : (
-          <ul className="w-full justify-start flex gap-x-4">
+          <ul className="w-full flex gap-x-4">
+            <li>
+              <li className="text-gray-400 hover:text-green-800">
+                <a href="/">Home</a>
+              </li>
+            </li>
+            <li className="text-gray-400 hover:text-green-800">
+              <a href="#about-us-section">About us</a>
+            </li>
+            <li className="text-gray-400 hover:text-green-800">
+              <a href="#shop-section">Shop</a>
+            </li>
+            <li className="text-gray-400 hover:text-green-800">
+              <a href="#pricing-section">Pricing</a>
+            </li>
+            <li className="text-gray-400 hover:text-green-800">
+              <a href="#testimonials-section">Testimonials</a>
+            </li>
+            <li className="text-gray-400 hover:text-green-800">
+              <a href="#download-section">Download</a>
+            </li>
+            <li className="text-gray-400 hover:text-green-800">Login</li>
+          </ul>
+        )}
+        {isMenuOpen && isMobile ? (
+          <ul className="w-full flex gap-x-4">
             <li className="text-black hover:text-green-800">
               <a href="/">Home</a>
             </li>
-            <li className="text-gray-400 hover:text-green-800">Shop</li>
+            <li className="text-gray-400 hover:text-green-800">
+              <a href="#about-us-section">About us</a>
+            </li>
+            <li className="text-gray-400 hover:text-green-800">
+              <a href="#shop-section">Shop</a>
+            </li>
+            <li className="text-gray-400 hover:text-green-800">
+              <a href="#pricing-section">Pricing</a>
+            </li>
+            <li className="text-gray-400 hover:text-green-800">
+              <a href="#testimonials-section">Testimonials</a>
+            </li>
+            <li className="text-gray-400 hover:text-green-800">
+              <a href="#download-section">Download</a>
+            </li>
             <li className="text-gray-400 hover:text-green-800">Login</li>
-            <li className="text-gray-400 hover:text-green-800">About us</li>
           </ul>
-        )}
+        ) : null}
       </div>
 
-      {isMenuOpen && isMobile ? (
-        <ul className="absolute top-full left-0 w-full bg-white shadow-md">
-          <li className="text-black hover:text-green-800 p-4">
-            <a href="/">Home</a>
-          </li>
-          <li className="text-gray-400 hover:text-green-800 p-4">Shop</li>
-          <li className="text-gray-400 hover:text-green-800 p-4">Login</li>
-          <li className="text-gray-400 hover:text-green-800 p-4">About us</li>
-        </ul>
-      ) : null}
-
-      <div className="md:mr-28">
+      <div className="flex md:mr-96">
         <img
           loading="lazy"
           src="assets/logo.png"

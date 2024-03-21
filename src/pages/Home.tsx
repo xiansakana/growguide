@@ -11,7 +11,7 @@ export const Home = () => {
       <div className="pt-16 flex flex-col">
         <div className="relative">
           <img
-            src="/assets/1.png"
+            src="/assets/hero.png"
             alt="Background"
             className="w-full object-cover"
           />
@@ -36,7 +36,6 @@ export const Home = () => {
             </div>
           </div>
         </div>
-
         <div className="flex flex-col gap-y-4 md:py-12">
           <div className="flex flex-col justify-center items-center gap-y-4 px-12">
             <span className="text-green-800 font-bold md:text-base text-sm">
@@ -46,8 +45,11 @@ export const Home = () => {
               As Seen On
             </span>
             <span className="text-black text-base text-center lg:px-64">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum,
-              eum.
+              Our commitment to excellence has garnered attention from top
+              industry leaders. Featured by innovative platforms and trusted by
+              global giants, we are proud to be recognized by Airbnb, HubSpot,
+              Google, Microsoft, Walmart, and FedEx for our exceptional service
+              and product quality.
             </span>
           </div>
           <div className="border-b border-t">
@@ -77,8 +79,10 @@ export const Home = () => {
             </div>
           </div>
         </div>
-
-        <div className="flex flex-col justify-center items-center gap-y-4 px-12 py-8">
+        <div
+          id="about-us-section"
+          className="flex flex-col justify-center items-center gap-y-4 px-12 py-8"
+        >
           <span className="text-green-800 font-bold md:text-base text-sm">
             BRAND FEATURES
           </span>
@@ -93,7 +97,6 @@ export const Home = () => {
             languages.
           </span>
         </div>
-
         <div className="flex flex-col items-center justify-center px-4 gap-y-8 py-8 lg:flex-row">
           <div className="flex flex-col justify-center gap-y-8 px-8 lg:w-1/2">
             <div className="flex flex-row justify-start gap-x-4">
@@ -174,10 +177,9 @@ export const Home = () => {
             </div>
           </div>
         </div>
-
         <div className="bg-[#FDF8F3] py-12">
           <div className="bg-[#FDF8F3] flex flex-col justify-center items-center gap-y-4 px-12  ">
-            <span className="text-green-600 font-bold md:text-base text-sm">
+            <span className="text-green-800 font-bold md:text-base text-sm">
               CATEGORY
             </span>
             <span className="md:text-4xl text-green-900 font-bold text-center text-3xl">
@@ -193,7 +195,6 @@ export const Home = () => {
           </div>
           <ProductCarousel />
         </div>
-
         <div className="bg-green-800 text-center text-white">
           <div className="flex flex-col justify-center items-center py-8 gap-y-4 px-8">
             <span className="md:text-2xl font-bold text-xl">
@@ -226,7 +227,6 @@ export const Home = () => {
             </div>
           </div>
         </div>
-
         {/* <div className="flex flex-col justify-center items-center gap-y-4 px-12 my-12 ">
           <span className="text-green-800 font-bold md:text-base text-sm">
             BEST SELLERS
@@ -247,8 +247,10 @@ export const Home = () => {
             </p>
           </button>
         </div> */}
-
-        <div className="flex flex-col justify-center items-center gap-y-4 p-12  ">
+        <div
+          id="shop-section"
+          className="flex flex-col justify-center items-center gap-y-4 p-12  "
+        >
           <span className="text-green-800 font-bold md:text-base text-sm">
             STEPS TO START
           </span>
@@ -266,7 +268,6 @@ export const Home = () => {
             </p>
           </button>
         </div>
-
         <div className="rounded overflow-hidden lg:px-48 lg:mx-36 py-12 md:px-48 px-16">
           <div className="relative shadow-lg ">
             <img className="w-full" src="/assets/img1.png" alt="Gardening" />
@@ -282,7 +283,6 @@ export const Home = () => {
             </div> */}
           </div>
         </div>
-
         <div className="flex md:flex-row flex-col text-white items-center justify-center w-full gap-8 p-8">
           <div className="flex flex-col bg-green-600 rounded-lg w-64 h-40 items-center justify-center p-2 gap-y-2">
             <img src="assets/clock.svg" alt="" className="w-12 " />
@@ -300,7 +300,6 @@ export const Home = () => {
             <span className="text-xs">Wddkend: 9AM - 5PM (EST)</span>
           </div>
         </div>
-
         <div className="bg-[#FDF8F3] flex flex-col justify-center items-center gap-y-4 p-12 my-8 ">
           <span className="text-green-800 font-bold md:text-base text-sm">
             BRAND FEATURES
@@ -331,8 +330,79 @@ export const Home = () => {
             </div>
           </div>
         </div>
+        <div
+          id="pricing-section"
+          className="flex flex-col justify-center items-center gap-y-4 px-12 my-12 "
+        >
+          <span className="text-green-800 font-bold md:text-base text-sm">
+            Pricing
+          </span>
+          <span className="md:text-4xl font-bold text-center text-3xl">
+            Our Pricing Options
+          </span>
+          <span className="text-black text-sm px-8 md:px-16 lg:px-32 text-center">
+            At GrowGuide, we believe in nurturing growth, both in your gardens
+            and in your knowledge of farming. Our pricing plans are designed to
+            accommodate both budding enthusiasts and seasoned agriculturists.
+          </span>
+          <div className="flex flex-col md:flex-row gap-4 pt-4">
+            <div className="flex flex-col rounded-2xl w-full items-center justify-start p-8 gap-y-2 shadow-inner border-2 text-center">
+              <span className="text-base font-bold pb-4">Free</span>
+              <span className="text-6xl font-bold">$0 Free</span>
+              <span className="text-xs font-bold">Per Month</span>
+              <div className="pt-4"></div>
+              <div className="border-b border-t p-2">
+                <span className="text-sm text-green-500">Learn </span>
+                <span className="text-sm ">Farming Introduction</span>
+              </div>
+              <div className="border-b p-2">
+                <span className="text-sm text-green-500 ">Buy </span>
+                <span className="text-sm ">Products and Services</span>
+              </div>
+              <div className="border-b p-2">
+                <span className="text-sm text-green-500 ">Win Rewards </span>
+                <span className="text-sm ">Refer A Friend</span>
+              </div>
+              <button className="mt-6 px-8 py-3 bg-orange-500 text-white rounded-lg shadow-xl hover:bg-green-600 transition-colors ">
+                <p className="text-xs md:text-sm lg:text-base">Get Started</p>
+              </button>
+            </div>
+            <div className="flex flex-col rounded-2xl w-full items-center justify-center p-8 gap-y-2 shadow-inner border-2 text-center">
+              <span className="text-base font-bold pb-4">Pro Plan</span>
+              <span className="text-6xl font-bold">$3.99</span>
+              <span className="text-xs font-bold">Per Month</span>
+              <div className="pt-4"></div>
+              <div className="border-b border-t p-2">
+                <span className="text-sm text-green-500">Learn </span>
+                <span className="text-sm ">
+                  Choose from our wide range of farm training full courses
+                </span>
+              </div>
+              <div className="border-b p-2">
+                <span className="text-sm text-green-500 ">Sell </span>
+                <span className="text-sm ">
+                  Products and Services as a Vendar
+                </span>
+              </div>
+              <div className="border-b p-2">
+                <span className="text-sm text-green-500 ">Buy </span>
+                <span className="text-sm ">Products and Services</span>
+              </div>
+              <div className="border-b p-2">
+                <span className="text-sm text-green-500 ">Win Rewards </span>
+                <span className="text-sm ">Refer A Friend</span>
+              </div>
+              <button className="mt-6 px-8 py-3 bg-orange-500 text-white rounded-lg shadow-xl hover:bg-green-600 transition-colors ">
+                <p className="text-xs md:text-sm lg:text-base">Get Started</p>
+              </button>
+            </div>
+          </div>
+        </div>
 
-        <div className="flex flex-col justify-center items-center gap-y-4 px-12 my-12 ">
+        <div
+          id="testimonials-section"
+          className="flex flex-col justify-center items-center gap-y-4 px-12 my-12 "
+        >
           <span className="text-green-800 font-bold md:text-base text-sm">
             TESTIMONIALS
           </span>
@@ -406,7 +476,44 @@ export const Home = () => {
           </button>
         </div>
 
-        <div className="bg-[#FDF8F3] flex flex-col md:flex-row justify-center items-center gap-4 lg:gap-12 p-12 mt-8 lg:px-32 text-green-800 font-bold text-center">
+        <div
+          id="download-section"
+          className="flex flex-col justify-center items-center gap-y-4 px-12 my-12 "
+        >
+          <span className="md:text-4xl font-bold text-center text-3xl">
+            Download Our App Today!
+          </span>
+          <span className="text-black text-sm px-8 md:px-16 lg:px-32 text-center">
+            You can now enjoy our wonderful platform on our exciting new mobile
+            app available on google play store and IOS app store.
+          </span>
+          <div className="flex flex-col md:flex-row gap-2 items-center">
+            <a
+              href="https://www.apple.com/ios/app-store/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
+                alt="Download on the App Store"
+                className="w-[250px] px-8"
+              />
+            </a>
+            <a
+              href="https://play.google.com/store/games"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                // src="/assets/google-play-badge-logo-svgrepo-com.svg"
+                src="/assets/google-play-badge-2022-2.svg"
+                alt="Download on the Google Play Store"
+                className="w-[250px]"
+              />
+            </a>
+          </div>
+        </div>
+        <div className="bg-[#FDF8F3] flex flex-col md:flex-row justify-center items-center gap-4 lg:gap-12 p-12 lg:px-32 text-green-800 font-bold text-center">
           <div className="flex flex-col justify-center items-center">
             <img src="assets/mark1.svg" alt="" className=" " />
             <span className="test-sm pt-2">Excellent Customer Service</span>
