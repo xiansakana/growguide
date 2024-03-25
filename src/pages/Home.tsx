@@ -40,14 +40,14 @@ export const Home = () => {
           </div>
         </div>
         <div className="flex flex-col gap-y-4 md:py-12">
-          <div className="flex flex-col justify-center items-center gap-y-4 px-12">
+          <div className="flex flex-col justify-center items-center gap-y-4 p-8">
             <span className="text-green-800 font-bold md:text-base text-sm">
               FEATURES
             </span>
             <span className="text-green-800 md:text-4xl font-bold text-center text-3xl">
               As Seen On
             </span>
-            <span className="text-black text-base text-center lg:px-64">
+            <span className="text-black text-sm text-center lg:px-64">
               Our commitment to excellence has garnered attention from top
               industry leaders. Featured by innovative platforms and trusted by
               global giants, we are proud to be recognized by Airbnb, HubSpot,
@@ -82,6 +82,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
+
         <div
           id="about-us"
           className="flex flex-col justify-center items-center gap-y-4 px-12 py-8"
@@ -100,6 +101,7 @@ export const Home = () => {
             languages.
           </span>
         </div>
+
         <div className="flex flex-col items-center justify-center px-4 gap-y-8 py-8 lg:flex-row">
           <div className="flex flex-col justify-center gap-y-8 px-8 lg:w-1/2">
             <div className="flex flex-row justify-start gap-x-4">
@@ -180,6 +182,50 @@ export const Home = () => {
             </div>
           </div>
         </div>
+
+        <span className="text-green-800 md:text-4xl font-bold text-center text-3xl pt-8 px-8">
+          How The Platform Works?
+        </span>
+        <div className="flex flex-col lg:flex-row p-16 gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col rounded-2xl w-full items-center justify-start p-8 gap-y-2 shadow-inner border-2 text-center">
+              <span className="text-xl font-bold text-green-800">
+                1. Sign-up
+              </span>
+              <div className="pt-4 text-sm">
+                You need to sign up using your email to be able to start
+                enjoying the wondeful features GrowGuide has to offer.
+              </div>
+            </div>
+            <div className="flex flex-col rounded-2xl w-full items-center justify-start p-8 gap-y-2 shadow-inner border-2 text-center">
+              <span className="text-xl font-bold text-green-800">2. Learn</span>
+              <div className="pt-4 text-sm">
+                Learn new skills and information that will help your crops,
+                livestock and farm.
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col rounded-2xl w-full items-center justify-start p-8 gap-y-2 shadow-inner border-2 text-center">
+              <span className="text-xl font-bold text-green-800">3. Trade</span>
+              <div className="pt-4 text-sm">
+                Buy or sell products and services essential to agriculture using
+                our platform.
+              </div>
+            </div>
+            <div className="flex flex-col rounded-2xl w-full items-center justify-start p-8 gap-y-2 shadow-inner border-2 text-center">
+              <span className="text-xl font-bold text-green-800">
+                4. Rewards
+              </span>
+              <div className="pt-4 text-sm">
+                Earn amazing rewards, win fantastic prizes, qualify for grants,
+                Find job opportunities and more. We have exciting gifts to share
+                with our loyal customers.
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="bg-[#FDF8F3] py-12">
           <div className="bg-[#FDF8F3] flex flex-col justify-center items-center gap-y-4 px-12  ">
             <span className="text-green-800 font-bold md:text-base text-sm">
