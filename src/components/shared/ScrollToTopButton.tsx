@@ -26,14 +26,17 @@ const ScrollToTopButton = () => {
 
   return (
     <div>
-      {isVisible && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-4 right-4 bg-orange-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg size-12 shadow-lg"
-        >
-          <div className="text-3xl">↑</div>
-        </button>
-      )}
+      <button
+        onClick={scrollToTop}
+        className="fixed bottom-4 right-4 bg-orange-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg size-12 shadow-lg transition-opacity duration-300"
+        style={{
+          opacity: isVisible ? 1 : 0,
+          visibility: isVisible ? "visible" : "hidden",
+          transition: "opacity 300ms, visibility 300ms",
+        }}
+      >
+        <div className="text-3xl">↑</div>
+      </button>
     </div>
   );
 };
