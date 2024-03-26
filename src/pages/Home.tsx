@@ -3,6 +3,7 @@ import React from "react";
 import { Navbar } from "../components/shared/Navbar";
 import { Footer } from "../components/shared/Footer";
 import ProductCarousel from "../components/ProductCarousel";
+import ScrollToTopButton from "../components/shared/ScrollToTopButton";
 
 export const Home = () => {
   return (
@@ -276,26 +277,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        {/* <div className="flex flex-col justify-center items-center gap-y-4 px-12 my-12 ">
-          <span className="text-green-800 font-bold md:text-base text-sm">
-            BEST SELLERS
-          </span>
-          <span className="md:text-4xl font-bold text-center text-3xl">
-            Highlighted Products
-          </span>
-          <span className="text-black text-sm text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-            laudantium facere esse vero autem voluptatum aspernatur minima velit
-            eveniet expedita!
-          </span>
-          <div className="flex flex-row"></div>
 
-          <button className="mt-6 px-8 py-3 bg-orange-500 text-white rounded-lg hover:bg-green-600 transition-colors shadow-xl ">
-            <p className="text-xs md:text-sm lg:text-base">
-              Visit All Products
-            </p>
-          </button>
-        </div> */}
         <div
           id="shop"
           className="flex flex-col justify-center items-center gap-y-4 p-12  "
@@ -581,6 +563,7 @@ export const Home = () => {
           </div>
         </div>
       </div>
+      <ScrollToTopButton />
       <div className="">
         <Footer />
       </div>
