@@ -96,11 +96,19 @@ export const Navbar = () => {
             >
               <a href="/">Login</a>
             </li>
+            <li
+              className={`text-gray-400 hover:text-green-800 ${
+                activeSection === "sign-up" ? "text-green-800" : ""
+              }`}
+            >
+              <a href="/">Sign up</a>
+            </li>
           </ul>
         )}
         {isMenuOpen && isMobile ? (
           <ul className="absolute top-full left-0 pl-4 w-full bg-white shadow-md">
             <li
+              onClick={handleClickMenu}
               className={`text-gray-400 hover:text-green-800 p-4 ${
                 activeSection === "home" ? "text-green-800" : ""
               }`}
@@ -108,6 +116,7 @@ export const Navbar = () => {
               <a href="/">Home</a>
             </li>
             <li
+              onClick={handleClickMenu}
               className={`text-gray-400 hover:text-green-800 p-4 ${
                 activeSection === "about-us" ? "text-green-800" : ""
               }`}
@@ -115,6 +124,7 @@ export const Navbar = () => {
               <a href="#about-us">About us</a>
             </li>
             <li
+              onClick={handleClickMenu}
               className={`text-gray-400 hover:text-green-800 p-4 ${
                 activeSection === "pricing" ? "text-green-800" : ""
               }`}
@@ -122,6 +132,7 @@ export const Navbar = () => {
               <a href="#pricing">Pricing</a>
             </li>
             <li
+              onClick={handleClickMenu}
               className={`text-gray-400 hover:text-green-800 p-4 ${
                 activeSection === "testimonials" ? "text-green-800" : ""
               }`}
@@ -129,6 +140,7 @@ export const Navbar = () => {
               <a href="#testimonials">Testimonials</a>
             </li>
             <li
+              onClick={handleClickMenu}
               className={`text-gray-400 hover:text-green-800 p-4 ${
                 activeSection === "download" ? "text-green-800" : ""
               }`}
@@ -136,11 +148,20 @@ export const Navbar = () => {
               <a href="#download">Download</a>
             </li>
             <li
+              onClick={handleClickMenu}
               className={`text-gray-400 hover:text-green-800 p-4 ${
                 activeSection === "login" ? "text-green-800" : ""
               }`}
             >
               <a href="/">Login</a>
+            </li>
+            <li
+              onClick={handleClickMenu}
+              className={`text-gray-400 hover:text-green-800 p-4 ${
+                activeSection === "sign-up" ? "text-green-800" : ""
+              }`}
+            >
+              <a href="/">Sign up</a>
             </li>
           </ul>
         ) : null}

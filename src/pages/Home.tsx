@@ -2,7 +2,7 @@ import React from "react";
 
 import { Navbar } from "../components/shared/Navbar";
 import { Footer } from "../components/shared/Footer";
-import ProductCarousel from "../components/ProductCarousel";
+// import ProductCarousel from "../components/ProductCarousel";
 import ScrollToTopButton from "../components/shared/ScrollToTopButton";
 
 export const Home = () => {
@@ -40,7 +40,8 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-4 md:py-12">
+
+        {/* <div className="flex flex-col gap-y-4 md:py-12">
           <div className="flex flex-col justify-center items-center gap-y-4 p-8">
             <span className="text-green-800 font-bold md:text-base text-sm">
               FEATURES
@@ -82,7 +83,7 @@ export const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div
           id="about-us"
@@ -227,7 +228,7 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className="bg-[#FDF8F3] py-12">
+        {/* <div className="bg-[#FDF8F3] py-12">
           <div className="bg-[#FDF8F3] flex flex-col justify-center items-center gap-y-4 px-12  ">
             <span className="text-green-800 font-bold md:text-base text-sm">
               CATEGORY
@@ -244,7 +245,8 @@ export const Home = () => {
             </span>
           </div>
           <ProductCarousel />
-        </div>
+        </div> */}
+
         <div className="bg-green-800 text-center text-white">
           <div className="flex flex-col justify-center items-center py-8 gap-y-4 px-8">
             <span className="md:text-2xl font-bold text-xl">
@@ -331,8 +333,9 @@ export const Home = () => {
             <span className="text-xs">Wddkend: 9AM - 5PM (EST)</span>
           </div>
         </div>
+
         <div className="bg-[#FDF8F3] flex flex-col justify-center items-center gap-y-4 p-12 my-8 ">
-          <span className="text-green-800 font-bold md:text-base text-sm">
+          {/* <span className="text-green-800 font-bold md:text-base text-sm">
             BRAND FEATURES
           </span>
           <span className="md:text-4xl font-bold text-center text-3xl">
@@ -349,18 +352,34 @@ export const Home = () => {
           </span>
           <button className="mt-6 px-8 py-3 bg-orange-500 text-white rounded-lg shadow-xl hover:bg-green-600 transition-colors ">
             <p className="text-xs md:text-sm lg:text-base">Shop Sprayers Now</p>
-          </button>
-          <div className="flex-col md:flex-row flex justify-center gap-x-8 py-8 md:px-24 px-12 gap-y-12">
-            <div className="flex">
-              <img src="assets/img2.svg" alt="" className="" />
-            </div>
+          </button> */}
+
+          {/* <div className="flex-col md:flex-row flex justify-center gap-x-8 py-8 md:px-24 px-12 gap-y-12">
             <div className="flex flex-col justify-between items-center gap-y-12">
-              <img src="assets/img3.svg" alt="" className="md:w-auto w-full" />
-              <img src="assets/img4.svg" alt="" className="md:w-auto w-full" />
-              <img src="assets/img5.svg" alt="" className="md:w-auto w-full" />
+              <img
+                src="assets/enrique-bancalari-uzuvLheGrTI-unsplash.jpg"
+                alt=""
+                className="md:w-auto w-full"
+              />
+              <img
+                src="assets/abhishek-kumar-ueuS6lkBq30-unsplash.jpg"
+                alt=""
+                className="md:w-auto w-[24px]"
+              />
+              <img
+                src="assets/rayhan-hibatullah-tXX8psH_RVM-unsplash.jpg"
+                alt=""
+                className="md:w-auto w-[24px]"
+              />
+              <img
+                src="assets/www-zanda-photography-RBdE3jv5y68-unsplash.jpg"
+                alt=""
+                className="md:w-auto w-[24px]"
+              />
             </div>
-          </div>
+          </div> */}
         </div>
+
         <div
           id="pricing"
           className="flex flex-col justify-center items-center gap-y-4 px-12 my-12 "
@@ -512,7 +531,8 @@ export const Home = () => {
           className="flex flex-col justify-center items-center gap-y-4 px-12 my-12 "
         >
           <span className="md:text-4xl font-bold text-center text-3xl">
-            Download Our App Today!
+            {/* Download Our App Today! */}
+            Coming Soon to App Stores!
           </span>
           <span className="text-black text-sm px-8 md:px-16 lg:px-32 text-center">
             You can now enjoy our wonderful platform on our exciting new mobile
