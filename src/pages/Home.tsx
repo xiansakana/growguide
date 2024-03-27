@@ -142,8 +142,12 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-1/3">
-            <img src="/assets/2.svg" alt="" />
+          <div className="lg:flex flex-col w-1/3 hidden">
+            <img
+              src="/assets/pexels-susanne-jutzeler-sujufoto-1172742.jpg"
+              alt=""
+              className="rounded-2xl"
+            />
           </div>
           <div className="flex flex-col justify-center gap-y-8 px-8 lg:w-1/2">
             <div className="flex flex-row justify-start gap-x-4">
@@ -354,30 +358,42 @@ export const Home = () => {
             <p className="text-xs md:text-sm lg:text-base">Shop Sprayers Now</p>
           </button> */}
 
-          {/* <div className="flex-col md:flex-row flex justify-center gap-x-8 py-8 md:px-24 px-12 gap-y-12">
-            <div className="flex flex-col justify-between items-center gap-y-12">
-              <img
-                src="assets/enrique-bancalari-uzuvLheGrTI-unsplash.jpg"
-                alt=""
-                className="md:w-auto w-full"
-              />
-              <img
-                src="assets/abhishek-kumar-ueuS6lkBq30-unsplash.jpg"
-                alt=""
-                className="md:w-auto w-[24px]"
-              />
-              <img
-                src="assets/rayhan-hibatullah-tXX8psH_RVM-unsplash.jpg"
-                alt=""
-                className="md:w-auto w-[24px]"
-              />
-              <img
-                src="assets/www-zanda-photography-RBdE3jv5y68-unsplash.jpg"
-                alt=""
-                className="md:w-auto w-[24px]"
-              />
+          <div className="flex-col md:flex-row flex justify-center gap-x-8 py-2 md:px-4 px-12 gap-y-12">
+            <div className="flex flex-col lg:flex-row p-2 gap-12">
+              <div className="flex flex-col md:flex-row gap-12">
+                <div className="flex flex-col w-full items-center justify-start gap-y-2 text-center">
+                  <img
+                    src="assets/enrique-bancalari-uzuvLheGrTI-unsplash.jpg"
+                    alt=""
+                    className="w-[250px] rounded-2xl"
+                  />
+                </div>
+                <div className="flex flex-col w-full items-center justify-start gap-y-2 text-center">
+                  <img
+                    src="assets/abhishek-kumar-ueuS6lkBq30-unsplash.jpg"
+                    alt=""
+                    className="md:w-[250px] rounded-2xl"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col md:flex-row gap-12">
+                <div className="flex flex-col w-full items-center justify-start gap-y-2 text-center">
+                  <img
+                    src="assets/rayhan-hibatullah-tXX8psH_RVM-unsplash.jpg"
+                    alt=""
+                    className="md:w-[250px] rounded-2xl"
+                  />
+                </div>
+                <div className="flex flex-col w-full items-center justify-start gap-y-2 text-center">
+                  <img
+                    src="assets/www-zanda-photography-RBdE3jv5y68-unsplash.jpg"
+                    alt=""
+                    className="md:w-[250px] rounded-2xl"
+                  />
+                </div>
+              </div>
             </div>
-          </div> */}
+          </div>
         </div>
 
         <div
