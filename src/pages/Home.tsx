@@ -360,13 +360,13 @@ export const Home = () => {
           </button>
 
           <div className="flex-col md:flex-row flex justify-center gap-x-8 py-2 md:px-4 px-12 gap-y-12">
-            <div className="flex flex-col lg:flex-row p-2 gap-12">
+            <div className="md:flex flex-col lg:flex-row p-2 gap-12 hidden">
               <div className="flex flex-col md:flex-row gap-12">
                 <div className="flex flex-col w-full items-center justify-start gap-y-2 text-center">
                   <img
                     src="assets/enrique-bancalari-uzuvLheGrTI-unsplash.jpg"
                     alt=""
-                    className="w-[250px] rounded-2xl"
+                    className="md:w-[250px] rounded-2xl"
                   />
                 </div>
                 <div className="flex flex-col w-full items-center justify-start gap-y-2 text-center">
