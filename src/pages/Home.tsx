@@ -339,24 +339,25 @@ export const Home = () => {
         </div>
 
         <div className="bg-[#FDF8F3] flex flex-col justify-center items-center gap-y-4 p-12 my-8 ">
-          {/* <span className="text-green-800 font-bold md:text-base text-sm">
+          <span className="text-green-800 font-bold md:text-base text-sm">
             BRAND FEATURES
           </span>
           <span className="md:text-4xl font-bold text-center text-3xl">
-            Petraltools Sprayers
+            Market Place
           </span>
           <span className="text-black text-sm px-8 md:px-16 lg:px-32 text-center">
-            Elevate your farming and gardening with the latest in our lineup of
-            Petraltools Sprayers. Engineered for reliability, our sprayers
-            deliver an unmatched balance of coverage and control. From delicate
-            mists to powerful jets, cater to all your plants' needs with a
-            simple twist of the nozzle. With ergonomic design and durable
-            materials, Petraltools Sprayers are the trusted companion for your
-            green ambitions.
+            Embark on a journey of horticultural prowess with our Marketplace
+            Module. Link up with esteemed local horticulture experts and access
+            premium gardening tools. Our in-house drop-shipping streamlines your
+            operations, with direct links to Alibaba, Amazon, Home Depot, and
+            Lowes. Enhance your visibility, grow your client base, and benefit
+            from our rewarding affiliate program. Register as a professional and
+            thrive with us. Join now for endless opportunities and success in
+            the green industry!
           </span>
           <button className="mt-6 px-8 py-3 bg-orange-500 text-white rounded-lg shadow-xl hover:bg-green-600 transition-colors ">
-            <p className="text-xs md:text-sm lg:text-base">Shop Sprayers Now</p>
-          </button> */}
+            <p className="text-xs md:text-sm lg:text-base">Shop Now</p>
+          </button>
 
           <div className="flex-col md:flex-row flex justify-center gap-x-8 py-2 md:px-4 px-12 gap-y-12">
             <div className="flex flex-col lg:flex-row p-2 gap-12">
@@ -394,6 +395,38 @@ export const Home = () => {
               </div>
             </div>
           </div>
+
+          <span className="md:text-4xl font-bold text-center text-3xl mt-16">
+            E-Learning
+          </span>
+          <span className="text-black text-sm px-8 md:px-16 lg:px-32 text-center">
+            This comprehensive digital encyclopedia offers detailed guides on
+            the 40 most commonly gardened crops in the U.S. Dive into a wealth
+            of information covering hardiness zones, optimal seeding times,
+            proper planting techniques, and much more. Whether it's sun/shade
+            requirements, watering schedules, companion planting, or exploring
+            medicinal benefits, our Species Guide is your go-to resource for
+            cultivating your garden with confidence and expertise.
+          </span>
+          <button className="mt-6 px-8 py-3 bg-orange-500 text-white rounded-lg shadow-xl hover:bg-green-600 transition-colors ">
+            <p className="text-xs md:text-sm lg:text-base">Start Now</p>
+          </button>
+
+          <span className="md:text-4xl font-bold text-center text-3xl mt-16">
+            AI-Chatbot
+          </span>
+          <span className="text-black text-sm px-8 md:px-16 lg:px-32 text-center">
+            Dive into the green world with our AI chatbot, your personal
+            conversational AI assistant. Designed to extend the capabilities of
+            our codex, this smart assistant is ready to tackle all your
+            gardening inquiries. From the nuances of plant care to advanced
+            horticultural advice, get accurate, detailed answers instantly.
+            Whether you're a seasoned gardener or just starting, our AI Chatbot
+            is here to support your horticultural journey every step of the way.
+          </span>
+          <button className="mt-6 px-8 py-3 bg-orange-500 text-white rounded-lg shadow-xl hover:bg-green-600 transition-colors ">
+            <p className="text-xs md:text-sm lg:text-base">Ask Now</p>
+          </button>
         </div>
 
         <div
