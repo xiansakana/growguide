@@ -12,36 +12,37 @@ import Pricing from "../components/homepage/Pricing";
 import Testimonials from "../components/homepage/Testimonials";
 import Download from "../components/homepage/Download";
 import Guarantee from "../components/homepage/Guarantee";
+import LazyLoadFadeIn from "../components/shared/LazyLoadFadeIn";
 
-export const Home = () => {
+const Home = () => {
+  const componentsToLazyLoad = [
+    { component: Hero, key: "hero" },
+    { component: AboutUs, key: "aboutUs" },
+    { component: Intro, key: "intro" },
+    { component: Subscribe, key: "subscribe" },
+    { component: Shop, key: "shop" },
+    { component: MVPFeatures, key: "mvpFeatures" },
+    { component: Pricing, key: "pricing" },
+    { component: Testimonials, key: "testimonials" },
+    { component: Download, key: "download" },
+    { component: Guarantee, key: "guarantee" },
+    { component: Footer, key: "footer" },
+  ];
   return (
     <div>
       <ScrollToTopButton />
-      <Navbar />
+      <LazyLoadFadeIn>
+        <Navbar />
+      </LazyLoadFadeIn>
       <div className="pt-16 flex flex-col">
-        {/* Hero Section */}
-        <Hero />
-        {/* About Us */}
-        <AboutUs />
-        {/* How The Platform Works */}
-        <Intro />
-        {/* Subscribe Section */}
-        <Subscribe />
-        {/* Shop Section */}
-        <Shop />
-        {/* MVP Features */}
-        <MVPFeatures />
-        {/* Pricing */}
-        <Pricing />
-        {/* Testimonials */}
-        <Testimonials />
-        {/* Download */}
-        <Download />
-        {/* Guarantee */}
-        <Guarantee />
-        {/* Footer */}
-        <Footer />
+        {componentsToLazyLoad.map(({ component: Component, key }) => (
+          <LazyLoadFadeIn key={key}>
+            <Component />
+          </LazyLoadFadeIn>
+        ))}
       </div>
     </div>
   );
 };
+
+export default Home;

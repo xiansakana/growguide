@@ -1,8 +1,15 @@
-import React from "react";
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Home } from "./pages/Home";
+import { useState } from "react";
+import ProgressBar from "./components/shared/ProgressBar";
+import Home from "./pages/Home";
 
 function App() {
+  const [contentLoaded, setContentLoaded] = useState(false);
+
+  const handleLoadComplete = () => {
+    setContentLoaded(true);
+  };
+
   return (
     // <Routes>
     //   <Router>
@@ -10,7 +17,13 @@ function App() {
     //   </Router>
     // </Routes>
     <div>
-      <Home />
+      {!contentLoaded ? (
+        <ProgressBar onLoaded={handleLoadComplete} />
+      ) : (
+        <div>
+          <Home />
+        </div>
+      )}
     </div>
   );
 }
