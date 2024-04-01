@@ -45,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "depcheck": "^1.4.7",
     "tailwindcss": "^3.4.1"
   }
 }
