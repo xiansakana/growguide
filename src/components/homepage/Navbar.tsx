@@ -173,7 +173,7 @@ export const Navbar = () => {
           src="assets/Search 1.svg"
           alt=""
           className="self-stretch my-auto size-6"
-        />
+        /> */}
         <img
           loading="lazy"
           src="assets/Sample_User_Icon 1.svg"
@@ -185,7 +185,7 @@ export const Navbar = () => {
           src="assets/Cart 1.svg"
           alt=""
           className="self-stretch my-auto size-6"
-        /> */}
+        />
         <img
           loading="lazy"
           src="assets/logo.png"
