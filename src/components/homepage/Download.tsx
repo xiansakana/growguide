@@ -11,8 +11,8 @@ const Download = () => {
         Coming Soon to App Stores!
       </span>
       <span className="text-black text-sm px-8 md:px-16 lg:px-32 text-center">
-        You can now enjoy our wonderful platform on our exciting new mobile app
-        available on google play store and IOS app store.
+        Very soon you can enjoy our wonderful platform on our exciting new
+        mobile app available on google play store and IOS app store.
       </span>
       <div className="flex flex-col md:flex-row gap-2 items-center">
         <a

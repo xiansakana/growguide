@@ -168,7 +168,7 @@ export const Navbar = () => {
       </div>
 
       <div className="flex gap-1 justify-end items-center">
-        <img
+        {/* <img
           loading="lazy"
           src="assets/Search 1.svg"
           alt=""
@@ -185,7 +185,7 @@ export const Navbar = () => {
           src="assets/Cart 1.svg"
           alt=""
           className="self-stretch my-auto size-6"
-        />
+        /> */}
         <img
           loading="lazy"
           src="assets/logo.png"

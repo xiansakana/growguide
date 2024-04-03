@@ -19,16 +19,19 @@ export const Footer = () => {
             <h4 className="text-2xl font-bold">Our Company</h4>
             <div>
               <div className="mt-3 flex flex-1 gap-x-4 ">
-                <a href="/">Search</a>
+                <a href="/">Home</a>
               </div>
               <div className="mt-3 flex flex-1 gap-x-4 ">
-                <a href="/">Privacy Statement</a>
+                <a href="#about-us">About us</a>
               </div>
               <div className="mt-3 flex flex-1 gap-x-4 ">
-                <a href="/">Join Our Affiliate</a>
+                <a href="#pricing">Pricing</a>
               </div>
               <div className="mt-3 flex flex-1 gap-x-4 ">
-                <a href="/">Tortium Blog</a>
+                <a href="#testimonials">Testimonials</a>
+              </div>
+              <div className="mt-3 flex flex-1 gap-x-4 ">
+                <a href="#download">Download</a>
               </div>
             </div>
           </div>
@@ -47,12 +50,12 @@ export const Footer = () => {
             <div className="flex flex-1 gap-x-4 mt-3">
               <img src="assets/envelope.svg" width={24} height={24} alt="" />
 
-              <span>support@growguide.com</span>
+              <span>growguideint@gmail.com</span>
             </div>
-            <div className="flex flex-1 gap-x-4 mt-3">
+            {/* <div className="flex flex-1 gap-x-4 mt-3">
               <img src="assets/telephone.svg" width={24} height={24} alt="" />
               <span>1 (800) 613-6889</span>
-            </div>
+            </div> */}
           </div>
         </div>
 

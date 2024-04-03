@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="relative">
+    <div className="relative h-full w-full top-0 left-0">
       <img
         src="/assets/hero.png"
         alt="Background"
@@ -8,24 +8,22 @@ const Hero = () => {
       />
       <div
         id="#home"
-        className="md:absolute top-0 left-1/2 right-0 bottom-0 flex flex-row justify-center items-center p-8 md:p-16 lg:p-24"
+        className="absolute left-1/2 pl-4 sm:pl-12 lg:pl-16 h-full w-1/2 top-0 flex flex-col justify-center items-start sm:gap-y-1 md:gap-y-2 lg:gap-y-4"
       >
-        <div>
-          <h1 className="font-bold text-left text-black text-3xl md:text-2xl lg:text-4xl">
-            <span className="text-green-800">Learn </span> Farming Practices
-            <br />
-            <span className="text-green-800">Always.</span>
-          </h1>
-          <p className="text-black font-bold text-lg md:text-sm lg:text-base mt-4 text-left">
-            With GrowGuide
-          </p>
-          <p className="text-black text-sm md:text-xs lg:text-sm mt-4 text-left">
-            Visit the Shop and More...
-          </p>
-          <button className="mt-6 px-8 py-3  bg-orange-500 text-white rounded-lg shadow-xl hover:bg-green-600 transition-colors ">
-            <p className="text-xs md:text-sm lg:text-base">Visit the Shop</p>
-          </button>
+        <div className="font-bold text-left text-black text-[12px]  sm:text-xl md:text-2xl lg:text-4xl">
+          <span className="text-green-800">Learn </span> Farming Practices
+          <br />
+          <span className="text-green-800">Always.</span>
         </div>
+        <p className="text-black font-bold text-[10px] md:text-sm lg:text-base ">
+          With GrowGuide
+        </p>
+        <p className="text-black text-[10px] md:text-sm lg:text-base">
+          Visit the Shop and More...
+        </p>
+        <button className="mt-2 px-2 sm:px-4 md:px-8 py-1 sm:py-2 bg-orange-500 text-white rounded-lg shadow-xl hover:bg-green-600 transition-colors ">
+          <p className="text-[8px] md:text-sm lg:text-base">Visit the Shop</p>
+        </button>
       </div>
     </div>
   );

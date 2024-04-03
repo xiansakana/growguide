@@ -21,8 +21,8 @@ const AboutUs = () => {
           languages.
         </span>
       </div>
-      <div className="flex flex-col items-center justify-center px-4 gap-y-8 py-8 lg:flex-row">
-        <div className="flex flex-col justify-center gap-y-8 px-8 lg:w-1/2">
+      <div className="flex flex-col items-between justify-between px-4 gap-y-8 gap-x-4 py-8 lg:flex-row">
+        <div className="flex flex-col justify-center items-start gap-y-8 px-8 lg:w-1/2">
           <div className="flex flex-row justify-start gap-x-4">
             <img src="/assets/save.svg" alt="" className="w-16" />
             <div>
@@ -59,14 +59,14 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className="lg:flex flex-col w-1/3 hidden">
+        <div className="lg:flex w-1/3 hidden">
           <img
             src="/assets/pexels-susanne-jutzeler-sujufoto-1172742.jpg"
             alt=""
             className="rounded-2xl"
           />
         </div>
-        <div className="flex flex-col justify-center gap-y-8 px-8 lg:w-1/2">
+        <div className="flex flex-col justify-center items-start gap-y-8 px-8 lg:w-1/2">
           <div className="flex flex-row justify-start gap-x-4">
             <img src="/assets/save.svg" alt="" className="w-16" />
             <div>

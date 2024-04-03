@@ -34,7 +34,7 @@ const Home = () => {
       <LazyLoadFadeIn>
         <Navbar />
       </LazyLoadFadeIn>
-      <div className="pt-16 flex flex-col">
+      <div className="pt-16 flex flex-col w-full">
         {componentsToLazyLoad.map(({ component: Component, key }) => (
           <LazyLoadFadeIn key={key}>
             <Component />
