@@ -59,7 +59,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        <div className="lg:flex w-1/3 hidden">
+        <div className="lg:flex w-1/2 h-1/2 hidden">
           <img
             src="/assets/pexels-susanne-jutzeler-sujufoto-1172742.jpg"
             alt=""

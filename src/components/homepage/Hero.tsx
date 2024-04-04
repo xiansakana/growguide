@@ -21,9 +21,18 @@ const Hero = () => {
         <p className="text-black text-[10px] md:text-sm lg:text-base">
           Visit the Shop and More...
         </p>
-        <button className="mt-2 px-2 sm:px-4 md:px-8 py-1 sm:py-2 bg-orange-500 text-white rounded-lg shadow-xl hover:bg-green-600 transition-colors ">
-          <p className="text-[8px] md:text-sm lg:text-base">Visit the Shop</p>
-        </button>
+        <div className="flex flex-wrap md:gap-4 gap-1">
+          <button className="flex mt-1 px-1 sm:px-4 md:px-8 py-1 sm:py-2 bg-orange-500 text-white rounded-lg shadow-xl hover:bg-green-600 transition-colors ">
+            <p className="text-[8px] md:text-sm lg:text-base">Visit the Shop</p>
+          </button>
+          <button className="flex mt-1 px-1 sm:px-4 md:px-8 py-1 sm:py-2 bg-orange-500 text-white rounded-lg shadow-xl hover:bg-green-600 transition-colors ">
+            <a href="#download">
+              <p className="text-[8px] md:text-sm lg:text-medium">
+                Download App
+              </p>
+            </a>
+          </button>
+        </div>
       </div>
     </div>
   );

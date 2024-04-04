@@ -41,7 +41,7 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className="flex gap-2 fixed z-10 justify-between shadow-md items-center px-8 w-full bg-white">
+    <nav className="flex gap-2 fixed z-10 justify-between shadow-md items-center px-4 w-full bg-white">
       <div className="flex">
         {isMobile ? (
           <div onClick={handleClickMenu}>
@@ -53,51 +53,54 @@ export const Navbar = () => {
             />
           </div>
         ) : (
-          <ul className="w-full flex gap-x-4">
+          <ul className="w-full flex gap-x-1">
             <li
-              className={`text-gray-400 hover:text-green-800 ${
+              className={`text-gray-400 hover:text-green-800 p-2 rounded-lg hover:bg-green-600 ${
                 activeSection === "home" ? "text-green-800" : ""
               }`}
             >
+              {/* <button className=" bg-orange-500 rounded-lg shadow-xl hover:bg-green-600 transition-colors "> */}
               <a href="/">Home</a>
+              {/* </button> */}
             </li>
+
             <li
-              className={`text-gray-400 hover:text-green-800 ${
+              className={`text-gray-400 hover:text-green-800 p-2 rounded-lg hover:bg-green-600 ${
                 activeSection === "about-us" ? "text-green-800" : ""
               }`}
             >
               <a href="#about-us">About us</a>
             </li>
             <li
-              className={`text-gray-400 hover:text-green-800 ${
+              className={`text-gray-400 hover:text-green-800 p-2 rounded-lg hover:bg-green-600 ${
                 activeSection === "pricing" ? "text-green-800" : ""
               }`}
             >
               <a href="#pricing">Pricing</a>
             </li>
             <li
-              className={`text-gray-400 hover:text-green-800 ${
+              className={`text-gray-400 hover:text-green-800 p-2 rounded-lg hover:bg-green-600 ${
                 activeSection === "testimonials" ? "text-green-800" : ""
               }`}
             >
               <a href="#testimonials">Testimonials</a>
             </li>
             <li
-              className={`text-gray-400 hover:text-green-800 ${
+              className={`text-gray-400 hover:text-green-800 p-2 rounded-lg hover:bg-green-600 ${
                 activeSection === "download" ? "text-green-800" : ""
               }`}
             >
               <a href="#download">Download</a>
             </li>
             <li
-              className={`text-gray-400 hover:text-green-800 ${
+              className={`text-gray-400 hover:text-green-800 p-2 rounded-lg hover:bg-green-600 ${
                 activeSection === "login" ? "text-green-800" : ""
               }`}
             >
               <a href="/">Login</a>
             </li>
             <li
-              className={`text-gray-400 hover:text-green-800 ${
+              className={`text-gray-400 hover:text-green-800 p-2 rounded-lg hover:bg-green-600 ${
                 activeSection === "sign-up" ? "text-green-800" : ""
               }`}
             >
@@ -109,7 +112,7 @@ export const Navbar = () => {
           <ul className="absolute top-full left-0 pl-4 w-full bg-white shadow-md">
             <li
               onClick={handleClickMenu}
-              className={`text-gray-400 hover:text-green-800 p-4 ${
+              className={`text-gray-400 hover:text-green-800 p-4 rounded-lg hover:bg-green-600 ${
                 activeSection === "home" ? "text-green-800" : ""
               }`}
             >
@@ -117,7 +120,7 @@ export const Navbar = () => {
             </li>
             <li
               onClick={handleClickMenu}
-              className={`text-gray-400 hover:text-green-800 p-4 ${
+              className={`text-gray-400 hover:text-green-800 p-4 rounded-lg hover:bg-green-600 ${
                 activeSection === "about-us" ? "text-green-800" : ""
               }`}
             >
@@ -125,7 +128,7 @@ export const Navbar = () => {
             </li>
             <li
               onClick={handleClickMenu}
-              className={`text-gray-400 hover:text-green-800 p-4 ${
+              className={`text-gray-400 hover:text-green-800 p-4 rounded-lg hover:bg-green-600 ${
                 activeSection === "pricing" ? "text-green-800" : ""
               }`}
             >
@@ -133,7 +136,7 @@ export const Navbar = () => {
             </li>
             <li
               onClick={handleClickMenu}
-              className={`text-gray-400 hover:text-green-800 p-4 ${
+              className={`text-gray-400 hover:text-green-800 p-4 rounded-lg hover:bg-green-600 ${
                 activeSection === "testimonials" ? "text-green-800" : ""
               }`}
             >
@@ -141,7 +144,7 @@ export const Navbar = () => {
             </li>
             <li
               onClick={handleClickMenu}
-              className={`text-gray-400 hover:text-green-800 p-4 ${
+              className={`text-gray-400 hover:text-green-800 p-4 rounded-lg hover:bg-green-600 ${
                 activeSection === "download" ? "text-green-800" : ""
               }`}
             >
@@ -149,7 +152,7 @@ export const Navbar = () => {
             </li>
             <li
               onClick={handleClickMenu}
-              className={`text-gray-400 hover:text-green-800 p-4 ${
+              className={`text-gray-400 hover:text-green-800 p-4 rounded-lg hover:bg-green-600 ${
                 activeSection === "login" ? "text-green-800" : ""
               }`}
             >
@@ -157,7 +160,7 @@ export const Navbar = () => {
             </li>
             <li
               onClick={handleClickMenu}
-              className={`text-gray-400 hover:text-green-800 p-4 ${
+              className={`text-gray-400 hover:text-green-800 p-4 rounded-lg hover:bg-green-600 ${
                 activeSection === "sign-up" ? "text-green-800" : ""
               }`}
             >
