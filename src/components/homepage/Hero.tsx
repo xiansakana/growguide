@@ -20,11 +20,13 @@ const Hero = () => {
           <span className="text-green-800">and More...</span>
         </div>
         <div className="flex md:flex-row  flex-wrap md:gap-4 gap-1">
-          <button className="flex mt-1 px-1 sm:px-4 md:px-8 lg:px-16 py-[3px] sm:py-2 lg:py-4 bg-orange-500 text-white rounded-lg shadow-xl hover:bg-green-600 transition-colors ">
-            <p className="text-[4px] md:text-sm lg:text-base">Visit the Shop</p>
+          <button className="flex mt-1 px-1 sm:px-4 md:px-8 lg:px-16 py-[3px] sm:py-2 lg:py-4 bg-orange-500 text-white rounded-sm md:rounded-lg shadow-xl hover:bg-green-600 transition-colors ">
+            <p className="text-[4px] sm:text-xs md:text-sm lg:text-base">
+              Visit the Shop
+            </p>
           </button>
-          <button className="flex mt-1 px-1 sm:px-4 md:px-8 lg:px-16 py-[3px] sm:py-2 lg:py-4 bg-orange-500 text-white rounded-lg shadow-xl hover:bg-green-600 transition-colors ">
-            <p className="text-[4px] md:text-sm lg:text-base">
+          <button className="flex mt-1 px-1 sm:px-4 md:px-8 lg:px-16 py-[3px] sm:py-2 lg:py-4 bg-orange-500 text-white rounded-sm md:rounded-lg shadow-xl hover:bg-green-600 transition-colors ">
+            <p className="text-[4px] sm:text-xs md:text-sm lg:text-base">
               <a href="#download">Download App</a>
             </p>
           </button>
