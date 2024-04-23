@@ -156,7 +156,9 @@ export const Navbar = () => {
                 activeSection === "login" ? "text-green-800" : ""
               }`}
             >
-              <a href="/">Login</a>
+              <a href="https://growguide-v1-a4ikcc.flutterflow.app/authLogin">
+                Login
+              </a>
             </li>
             <li
               onClick={handleClickMenu}
@@ -164,7 +166,9 @@ export const Navbar = () => {
                 activeSection === "sign-up" ? "text-green-800" : ""
               }`}
             >
-              <a href="/">Sign up</a>
+              <a href="https://growguide-v1-a4ikcc.flutterflow.app/authCreate">
+                Sign up
+              </a>
             </li>
           </ul>
         ) : null}
