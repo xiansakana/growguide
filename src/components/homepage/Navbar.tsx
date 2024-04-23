@@ -97,14 +97,18 @@ export const Navbar = () => {
                 activeSection === "login" ? "text-green-800" : ""
               }`}
             >
-              <a href="/">Login</a>
+              <a href="https://growguide-v1-a4ikcc.flutterflow.app/authLogin">
+                Login
+              </a>
             </li>
             <li
               className={`text-gray-400 hover:text-green-800 p-2 rounded-lg hover:bg-green-600 ${
                 activeSection === "sign-up" ? "text-green-800" : ""
               }`}
             >
-              <a href="/">Sign up</a>
+              <a href="https://growguide-v1-a4ikcc.flutterflow.app/authCreate">
+                Sign up
+              </a>
             </li>
           </ul>
         )}
